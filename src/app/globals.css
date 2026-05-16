@@ -103,3 +103,92 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px var(--bg-elevated) inset;
   -webkit-text-fill-color: var(--text-primary);
 }
+
+/* Markdown renderer styles */
+.markdown-content h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 1rem 0 0.5rem;
+  text-shadow: 0 0 8px rgba(0, 245, 255, 0.4);
+}
+.markdown-content h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0.875rem 0 0.4rem;
+  opacity: 0.85;
+}
+.markdown-content h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0.75rem 0 0.35rem;
+}
+.markdown-content p {
+  margin: 0.4rem 0;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+.markdown-content strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.markdown-content em {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+.markdown-content code {
+  background: rgba(0, 245, 255, 0.08);
+  border: 1px solid rgba(0, 245, 255, 0.15);
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+  color: var(--accent);
+  font-family: var(--font-jetbrains), monospace;
+}
+.markdown-content pre {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  overflow-x: auto;
+}
+.markdown-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.markdown-content ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+.markdown-content li {
+  position: relative;
+  margin: 0.2rem 0;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+.markdown-content li::before {
+  content: '›';
+  position: absolute;
+  left: -1rem;
+  color: var(--accent);
+  opacity: 0.7;
+}
+.markdown-content br {
+  display: block;
+  content: '';
+  margin: 0.4rem 0;
+}
+mark {
+  background: rgba(0, 245, 255, 0.2) !important;
+  color: var(--accent) !important;
+  border-radius: 2px;
+  padding: 0 2px;
+}
